@@ -1,5 +1,10 @@
-console.log('Starting test...');
+const assert = require('assert');
 
-setTimeout(() => console.log('Waiting 3 seconds...'), 3000);
-console.log('Test complete');
+console.log('Starting tests...');
+
+// Ejemplo de test real
+assert.strictEqual(1 + 1, 2, 'La suma debe ser 2');
+assert.strictEqual('hola'.toUpperCase(), 'HOLA', 'toUpperCase debe funcionar');
+
+console.log('All tests passed!');
 
